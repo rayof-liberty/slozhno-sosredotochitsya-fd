@@ -1,5 +1,268 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+:root{
+  --main-font: IBM Plex Mono;
+  --first-title-color: #DB00FF;
+  --text-title-color: #FF0070;
+  --text-color-header: #000028;
+  --text-color: #F1B2CE;
+  --bg-color: #000028;
+  --bg-image: url(/images/cover-image-dark.png);
 }
+.header{
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  background-image: var(--bg-image);
+  position: relative;
+}
+/* правый верхний уголоккккк */
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  margin: 10px 10px 0 0 ;
+  top: 0;
+  right: 0;
+  width: 25px; /* ширина уголка */
+  height: 25px; /* высота уголка */
+  border-top: 1px solid var( --text-title-color); /* граница сверху */
+  border-right: 1px solid var( --text-title-color); /* граница слева */
+}
+/* левый нижний уголооооккк */
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  margin: 0 0 10px 10px;
+  bottom: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var( --text-title-color);;
+  border-left: 1px solid var( --text-title-color);;
+}
+/* список с кнопками */
+.header__theme-menu-list{
+  list-style-type: none;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  flex-direction: column;
+  margin: 75px 18px 0  0;
+}
+/* сам REC */
+.rec{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--text-title-color);
+  
+}
+/* точка после REC */
+.rec::after{
+  content: '';
+  display: inline-block;
+  width: 9px; 
+  height: 9px;
+  background-color: var(--text-title-color);
+  border-radius: 50%;
+  margin-left: 12px;
+  margin-bottom: 2px;
+  box-shadow:  0 0 4px 2px var(--text-title-color);
+}
+/* состояния кнопок */
+.header__theme-menu-button:hover{
+  outline: solid 1px green;
+}
+.header__theme-menu-button:focus-visible{
+  text-decoration: underline;
+}
+
+/* список день авто неон */
+.header__theme-menu-item{
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--text-title-color);
+  
+}
+/* сбросили фон и бордер */
+.header__theme-menu-button{
+  background-color: transparent;
+  border: none;
+}
+
+
+.h1{
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  letter-spacing: 0%;
+  color:var(--first-title-color);
+  text-align: start;
+  text-shadow: 4px 4px 0 var(--text-title-color);
+}
+.h2{
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  color: var(--text-color-header);
+}
+.h3{
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  color: var(--text-color);
+  margin: 0;
+}
+.h4{
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  color: var(--text-title-color);
+  
+}
+.h5{
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  color: var( --text-color-header);
+  margin: 0;
+}
+
+.h6{
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  letter-spacing: 0%;
+  color: var(--first-title-color);
+  text-shadow: 2px 2px 0 var(--text-title-color);
+}
+.title_header_text{
+  width: 355px;
+  color: var(--text-color-header);
+  margin-left: 10px;
+  min-height: 117px;
+  margin-bottom: 70px;
+  background-color: var(--text-title-color);
+  margin-top: 55px;
+  align-items: center;
+  justify-content: center ;
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.title_main_text{
+  max-width: 355px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: var(--text-title-color);
+}
+
+.main-title-block{
+  min-width: 355px;
+  margin-left: 10px;
+  max-height: 70px;
+}
+.main-block-text{
+  max-width: 355px;
+  margin-left: 10px;
+}
+
+.sunset{
+  max-width: 355px;
+  height: 142px;
+}
+.ice-creame{
+  max-width: 355px;
+  height: 355px;
+}
+.tape{
+  max-width: 355px;
+  height: 237px;
+}
+
+.books{
+  max-width: 355px;
+  height: 355px;
+}
+
+.street{
+  max-width: 355px;
+  height: 237px;
+  
+}
+
+.image:not(:first-child){
+  margin-top: 10px;
+}
+
+.image{
+  display: flex;
+  object-fit: contain;
+  margin: auto;
+}
+
+
+
+.footer{
+  position: relative;
+}
+
+.footer-section{
+  margin: auto;
+  min-height: 668px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+.page {
+  color: var(--text-color, #F1B2CE);
+  font-family: var(--main-font);
+  background-color: var(--bg-color);
+  background-attachment: fixed;
+}
+
+@media (width > 768px){
+  .header{
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    background-image: var(--bg-image)
+  }
+  .title_header_text{
+    /* background-color: var(--text-title-color); */
+    justify-self: end;
+    margin-right: 20px;
+  }
+  .par_first{
+    margin-left: 20px;
+    gap: 20px;
+   display: grid;   
+   grid-template-columns: 236px 472px;
+  }
+}
+
+
+@media (width > 1024px ){}
