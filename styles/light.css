@@ -10,9 +10,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: IBM Plex Mono;
-  --first-title-color: #FFC2E6;
-  --text-title-color: #FF8DCB;
-  --text-color: #F1B2CE;
+  --first-title-color: #ffc2e6;
+  --text-title-color: #ff8dcb;
+  --text-color: #f1b2ce;
   --bg-color: #353430;
   --bg-image-head: url(/images/cover-image-light.png);
 }
@@ -20,49 +20,49 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--bg-image-head);
-  .rec{
+  .rec {
     opacity: 0;
   }
-  .header__theme-menu-item{
+  .header__theme-menu-item {
     color: var(--bg-color);
   }
-  .header__theme-menu-button:hover{
-  outline: 1px solid var(--bg-color);
-}
-.header__theme-menu-button:focus{
-  outline: none;
-}
-.header__theme-menu-button:focus-visible{
-  outline: 1px solid var(--bg-color);
-}
-.decorated-zone::before{
-  border-top:1px solid var(--bg-color);
-  border-right:1px solid var(--bg-color);
-}
-.decorated-zone::after{
-  border-bottom:1px solid  var(--bg-color);
-  border-left:1px solid var(--bg-color);
-}
-.title{
-  color: var(--first-title-color);
-  text-shadow: 4px 4px 0 var(--text-title-color);
-}
-.main-title-block{
-  background-color: var(--text-title-color);
-  color: #353430;
-}
-.text-block-paragraph{
-  color: var(--bg-color);
-}
-.footer::before{
-  border-top:1px solid var(--bg-color);
-  border-right:1px solid var(--bg-color);
-}
-.footer::after{
-  border-bottom:1px solid var(--bg-color);
-  border-left:1px solid var(--bg-color);
-}
-.section-title{
-  color: var(--bg-color);
-}
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--bg-color);
+  }
+  .header__theme-menu-button:focus {
+    outline: none;
+  }
+  .header__theme-menu-button:focus-visible {
+    outline: 1px solid var(--bg-color);
+  }
+  .decorated-zone::before {
+    border-top: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+  }
+  .decorated-zone::after {
+    border-bottom: 1px solid var(--bg-color);
+    border-left: 1px solid var(--bg-color);
+  }
+  .title {
+    color: var(--first-title-color);
+    text-shadow: 4px 4px 0 var(--text-title-color);
+  }
+  .main-title-block {
+    background-color: var(--text-title-color);
+    color: #353430;
+  }
+  .text-block-paragraph {
+    color: var(--bg-color);
+  }
+  .footer::before {
+    border-top: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+  }
+  .footer::after {
+    border-bottom: 1px solid var(--bg-color);
+    border-left: 1px solid var(--bg-color);
+  }
+  .section-title {
+    color: var(--bg-color);
+  }
 }
