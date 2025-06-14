@@ -8,13 +8,13 @@
   --bg-image-head: url(/images/cover-image-dark.png);
 }
 .header__theme-menu-button:hover {
-  outline: 1px solid red;
+  outline: 1px solid var(--text-title-color);
 }
 .header__theme-menu-button:focus {
   outline: none;
 }
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid red;
+  outline: 1px solid var(--text-title-color);
 }
 .header {
   display: grid;
@@ -262,7 +262,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  /* border: 0.5px solid red; */
+  border: 0.5px solid red;
 }
 
 @media (width >= 768px) {
