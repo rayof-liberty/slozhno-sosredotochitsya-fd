@@ -152,6 +152,13 @@
 .text-shadow {
   text-shadow: 2px 2px 0 var(--text-title-color);
 }
+.text-shadow:hover{
+  border-bottom:1px solid var(--text-color);
+}
+.text-shadow:focus-visible{
+  outline:1px solid red;
+}
+/* outline:1px solid var(--text-color); */
 /* разметка */
 .focus {
   margin-top: 18px;
