@@ -227,7 +227,6 @@
 .footer {
   position: relative;
   height: 100vh;
-  height: 100vh;
   min-height: 668px;
 }
 /* .footer::before {
@@ -453,9 +452,7 @@
     width: 100%;
     max-width: 491px;
   }
-  .decorated-zone::after {
-    bottom: -75px;
-  }
+  
   .focus {
     grid-template-columns: 315px 649px;
   }
