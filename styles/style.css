@@ -140,11 +140,11 @@
   text-shadow: 1.5px 1.5px 0 var(--text-title-color);
   text-decoration: none;
 }
-.text-shadow:hover{
-  border-bottom:1px solid var(--text-color);
+.text-shadow:hover {
+  border-bottom: 1px solid var(--text-color);
 }
-.text-shadow:focus-visible{
-  outline:1px solid red;
+.text-shadow:focus-visible {
+  outline: 1px solid red;
 }
 /* outline:1px solid var(--text-color); */
 /* разметка */
@@ -241,7 +241,7 @@
   border-top: 1px solid var(--text-title-color); 
   border-right: 1px solid var(--text-title-color);
 } */
- /* вместо них  .decorated-zone */
+/* вместо них  .decorated-zone */
 /* .footer::after {
   content: "";
   position: absolute;
@@ -410,7 +410,7 @@
     border-right: 1px solid var(--text-title-color);
   } */
 
-/* использовать .decorated-zone */
+  /* использовать .decorated-zone */
 
   /* .footer::after {
     content: "";
@@ -487,15 +487,14 @@
     width: 100%;
     max-width: 984px;
   }
-  .footer{
+  .footer {
     height: 100vh;
     min-height: 768px;
   }
   .footer-section {
     padding: 319px 276px;
   }
-  .decorated-zone::after{
+  .decorated-zone::after {
     bottom: 20px;
-
   }
 }
