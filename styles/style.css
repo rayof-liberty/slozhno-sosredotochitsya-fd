@@ -1,12 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --main-font: IBM Plex Mono;
-  --first-title-color: #db00ff;
-  --text-title-color: #ff0070;
-  --text-color: #f1b2ce;
-  --bg-color: #000028;
-  --bg-image-head: url(/images/cover-image-dark.png);
-}
+
 .header__theme-menu-button:hover {
   outline: 1px solid var(--text-title-color);
 }
@@ -18,21 +11,22 @@
 }
 .header {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr min-content 1fr;
   position: relative;
-  margin-bottom: 62px;
+  height: 100vh;
+  min-height: 668px;
 }
 .title {
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono";
   font-weight: 700;
   font-size: 116px;
   line-height: 83%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--first-title-color);
   text-shadow: 4px 4px 0 var(--text-title-color);
 }
 .header-title {
-  padding: 22px 0 0 10px;
+  padding-left: 10px;
 }
 .main-title-block {
   max-width: 355px;
@@ -43,10 +37,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 .title_header_text {
-  padding: 55px 0 0 10px;
+  padding-left: 10px;
+  padding-top: 55px;
 }
 /* правый верхний уголоккккк */
 .decorated-zone::before {
@@ -65,8 +60,8 @@
   content: "";
   position: absolute;
   margin-left: 10px;
-  bottom: -12px;
-  left: -1px;
+  bottom: 10px;
+  left: 0px;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--text-title-color);
@@ -86,7 +81,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   background-color: transparent;
   color: var(--text-title-color);
@@ -104,7 +99,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 0%;
   text-align: center;
   color: var(--text-title-color);
 }
@@ -117,7 +111,6 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-
   background-color: var(--text-title-color);
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--text-title-color);
@@ -128,7 +121,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--text-title-color);
 }
 .title-main {
@@ -136,21 +129,16 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--bg-color);
   background-color: var(--text-title-color);
 }
-.title-main-pale {
-  font-family: IBM Plex Mono;
+.pale {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23.4px;
-  letter-spacing: 0%;
-  color: var(--bg-color);
-  background-color: var(--text-title-color);
 }
 .text-shadow {
-  text-shadow: 2px 2px 0 var(--text-title-color);
+  text-shadow: 1.5px 1.5px 0 var(--text-title-color);
+  text-decoration: none;
 }
 .text-shadow:hover{
   border-bottom:1px solid var(--text-color);
@@ -161,18 +149,19 @@
 /* outline:1px solid var(--text-color); */
 /* разметка */
 .focus {
-  margin-top: 18px;
-  margin-left: 10px;
+  padding: 40px 10px 0 10px;
 }
 .fish {
   margin-top: 50px;
   margin-left: 10px;
 }
 .title-pic {
-  width: 355px;
+  width: 100%;
+  max-width: 355px;
 }
 .focus-title {
-  width: 355px;
+  width: 100%;
+  max-width: 355px;
 }
 .rows {
   margin-top: 10px;
@@ -195,12 +184,13 @@
   margin-top: 10px;
 }
 .text-block-paragraph {
-  width: 355px;
+  width: 100%;
+  max-width: 355px;
   font-family: IBM Plex Mono;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--text-color);
 }
 /* секция с картинками */
@@ -236,31 +226,35 @@
 /* footer */
 .footer {
   position: relative;
+  height: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
-.footer::before {
+/* .footer::before {
   content: "";
   position: absolute;
   margin: 10px 10px 0 0;
-  top: 0;
+  top: 42px;
   right: 0;
-  width: 25px; /* ширина уголка */
-  height: 25px; /* высота уголка */
-  border-top: 1px solid var(--text-title-color); /* граница сверху */
-  border-right: 1px solid var(--text-title-color); /* граница слева */
-}
-.footer::after {
+  width: 25px; 
+  height: 25px; 
+  border-top: 1px solid var(--text-title-color); 
+  border-right: 1px solid var(--text-title-color);
+} */
+ /* вместо них  .decorated-zone */
+/* .footer::after {
   content: "";
   position: absolute;
   margin: 0 0 10px 10px;
-  bottom: 1px;
-  left: -1px;
+  bottom: 4px;
+  left: 0px;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--text-title-color);
   border-left: 1px solid var(--text-title-color);
-}
+} */
 .footer-section {
-  padding: 335px 13px 285px 14px;
+  padding: 330px 13px 285px 14px;
 }
 
 .page {
@@ -268,15 +262,15 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #000028);
   /* border: 0.5px solid red; */
 }
 
 @media (width >= 768px) {
   .header {
-    margin-bottom: 230px;
+    height: 100vh;
+    min-height: 1024px;
   }
-
   .rec {
     margin: 10px 9px 0 0;
   }
@@ -284,35 +278,40 @@
     margin: 20px;
   }
   .decorated-zone::after {
-    margin: 5px 0 0 20px;
+    margin-left: 20px;
+    bottom: 20px;
+    left: 0px;
   }
   .header__theme-menu-list {
     padding: 116px 8px 0 0;
   }
   .header-title {
-    padding: 180px 0 0 0;
+    padding: 0;
   }
   .title {
     font-size: 120px;
   }
   .title_header_text {
-    padding: 156px 0 0 382px;
+    padding: 162px 0 0 384px;
   }
   .main-title-block {
-    min-width: 364px;
+    width: 100%;
+    max-width: 364px;
   }
   .focus {
     display: grid;
     grid-template-columns: 236px 472px;
-    margin: 58px 20px 0 20px;
     gap: 20px;
+    padding: 60px 20px 0 20px;
   }
   .focus-title {
-    width: 472px;
+    width: 100%;
+    max-width: 472px;
   }
   .text-block-paragraph {
     margin-top: 10px;
-    width: 472px;
+    width: 100%;
+    max-width: 472px;
   }
   .dofamin {
     margin-top: 20px;
@@ -341,17 +340,20 @@
   }
 
   .rows {
-    width: 728px;
+    width: 100%;
+    max-width: 728px;
   }
   .concentration {
     margin-left: 10px;
   }
   .attention {
-    width: 236px;
+    width: 100%;
+    max-width: 236px;
     margin-left: 10px;
   }
   .title-pic {
-    width: 728px;
+    width: 100%;
+    max-width: 728px;
   }
   /* картинки */
   .gallery {
@@ -394,20 +396,23 @@
     padding-top: 60px;
   }
   .footer-section {
-    padding: 463px 204px;
+    padding: 523px 204px;
   }
-  .footer::before {
+  /* .footer::before {
     content: "";
     position: absolute;
     margin: 80px 20px 0 0;
     top: 0;
     right: 0;
-    width: 25px; /* ширина уголка */
-    height: 25px; /* высота уголка */
-    border-top: 1px solid var(--text-title-color); /* граница сверху */
-    border-right: 1px solid var(--text-title-color); /* граница слева */
-  }
-  .footer::after {
+    width: 25px; 
+    height: 25px; 
+    border-top: 1px solid var(--text-title-color); 
+    border-right: 1px solid var(--text-title-color);
+  } */
+
+/* использовать .decorated-zone */
+
+  /* .footer::after {
     content: "";
     position: absolute;
     margin: 0 0 23px 20px;
@@ -417,12 +422,14 @@
     height: 25px;
     border-bottom: 1px solid var(--text-title-color);
     border-left: 1px solid var(--text-title-color);
-  }
+  } */
 }
 @media (width >= 1024px) {
   .header {
     display: grid;
-    margin-bottom: 154px;
+    grid-template-rows: repeat(3, min-content);
+    min-height: 768px;
+    height: 100vh;
   }
   .header__theme-menu-list {
     display: flex;
@@ -437,13 +444,14 @@
     font-size: 157px;
   }
   .header-title {
-    padding: 94px 0 0 0;
+    padding-top: 280px;
   }
   .title_header_text {
     padding: 114px 0 0 512px;
   }
   .main-title-block {
-    min-width: 491px;
+    width: 100%;
+    max-width: 491px;
   }
   .decorated-zone::after {
     bottom: -75px;
@@ -452,10 +460,12 @@
     grid-template-columns: 315px 649px;
   }
   .focus-title {
-    width: 649px;
+    width: 100%;
+    max-width: 649px;
   }
   .text-block-paragraph {
-    width: 649px;
+    width: 100%;
+    max-width: 649px;
   }
   .rows-block {
     display: grid;
@@ -463,18 +473,29 @@
     gap: 20px;
   }
   .min-row {
-    width: 315px;
+    width: 100%;
+    max-width: 315px;
   }
   .attention {
-    width: 315px;
+    width: 100%;
+    max-width: 315px;
   }
   .fish {
     grid-template-columns: 315px 649px;
   }
   .title-pic {
-    width: 984px;
+    width: 100%;
+    max-width: 984px;
+  }
+  .footer{
+    height: 100vh;
+    min-height: 768px;
   }
   .footer-section {
     padding: 319px 276px;
+  }
+  .decorated-zone::after{
+    bottom: 20px;
+
   }
 }
