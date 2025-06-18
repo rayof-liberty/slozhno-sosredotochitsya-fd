@@ -10,59 +10,54 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: IBM Plex Mono;
-  --first-title-color: #ffc2e6;
-  --text-title-color: #ff8dcb;
-  --text-color: #f1b2ce;
-  --bg-color: #353430;
-  --bg-image-head: url(/images/cover-image-light.png);
+  --text-paragraph: #353430;
+  --title-paragraph:  #353430;
+  --title-background-paragraph: #FF8DCB;
+  --main-title-paragraph: #353430;
+  --main-title: #FFC2E6;
+  --shadow-title: #FF8DCB;
+  --buttons-corner: #353430;
+  --link-shadow: #FF8DCB;
+  --bg-image-head: url(../images/cover-image-light.png);
+}
+.page{
+  background-image: var(--bg-image-head);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--first-title-color);
+  /* border: 0.5px solid red; */
+}
+.header__theme-menu-item{
+  color: var(--bg-color);
+}
+.decorated-zone::before{
+  color: var(--bg-color);
+}
+.decorated-zone::after{
+  color: var(--bg-color);
+}
+.theme-light .page {
+  .rec{
+  visibility: hidden;
+}
+  /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: var(--bg-image-head);
-  .rec {
-    opacity: 0;
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+   --main-font: IBM Plex Mono;
+  --text-paragraph: #353430;
+  --title-paragraph:  #353430;
+  --title-background-paragraph: #FF8DCB;
+  --main-title-paragraph: #353430;
+  --main-title: #FFC2E6;
+  --shadow-title: #FF8DCB;
+  --buttons-corner: #353430;
+  --link-shadow: #FF8DCB;
+  --bg-image-head: url(../images/cover-image-light.png);
   }
-  .header__theme-menu-item {
-    color: var(--bg-color);
-  }
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--bg-color);
-  }
-  .header__theme-menu-button:focus {
-    outline: none;
-  }
-  .header__theme-menu-button:focus-visible {
-    outline: 1px solid var(--bg-color);
-  }
-  .decorated-zone::before {
-    border-top: 1px solid var(--bg-color);
-    border-right: 1px solid var(--bg-color);
-  }
-  .decorated-zone::after {
-    border-bottom: 1px solid var(--bg-color);
-    border-left: 1px solid var(--bg-color);
-  }
-  .title {
-    color: var(--first-title-color);
-    text-shadow: 4px 4px 0 var(--text-title-color);
-  }
-  .main-title-block {
-    background-color: var(--text-title-color);
-    color: #353430;
-  }
-  .text-block-paragraph {
-    color: var(--bg-color);
-  }
-  .footer::before {
-    border-top: 1px solid var(--bg-color);
-    border-right: 1px solid var(--bg-color);
-  }
-  .footer::after {
-    border-bottom: 1px solid var(--bg-color);
-    border-left: 1px solid var(--bg-color);
-  }
-  .section-title {
-    color: var(--bg-color);
+  .rec{
+    visibility: hidden;
   }
 }
