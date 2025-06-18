@@ -11,16 +11,16 @@
   */
   --main-font: IBM Plex Mono;
   --text-paragraph: #353430;
-  --title-paragraph:  #353430;
-  --title-background-paragraph: #FF8DCB;
+  --title-paragraph: #353430;
+  --title-background-paragraph: #ff8dcb;
   --main-title-paragraph: #353430;
-  --main-title: #FFC2E6;
-  --shadow-title: #FF8DCB;
+  --main-title: #ffc2e6;
+  --shadow-title: #ff8dcb;
   --buttons-corner: #353430;
-  --link-shadow: #FF8DCB;
+  --link-shadow: #ff8dcb;
   --bg-image-head: url(../images/cover-image-light.png);
 }
-.page{
+.page {
   background-image: var(--bg-image-head);
   background-position: center;
   background-size: cover;
@@ -28,36 +28,36 @@
   background-color: var(--first-title-color);
   /* border: 0.5px solid red; */
 }
-.header__theme-menu-item{
+.header__theme-menu-item {
   color: var(--bg-color);
 }
-.decorated-zone::before{
+.decorated-zone::before {
   color: var(--bg-color);
 }
-.decorated-zone::after{
+.decorated-zone::after {
   color: var(--bg-color);
 }
 .theme-light .page {
-  .rec{
-  visibility: hidden;
-}
+  .rec {
+    visibility: hidden;
+  }
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
-   --main-font: IBM Plex Mono;
-  --text-paragraph: #353430;
-  --title-paragraph:  #353430;
-  --title-background-paragraph: #FF8DCB;
-  --main-title-paragraph: #353430;
-  --main-title: #FFC2E6;
-  --shadow-title: #FF8DCB;
-  --buttons-corner: #353430;
-  --link-shadow: #FF8DCB;
-  --bg-image-head: url(../images/cover-image-light.png);
+    --main-font: IBM Plex Mono;
+    --text-paragraph: #353430;
+    --title-paragraph: #353430;
+    --title-background-paragraph: #ff8dcb;
+    --main-title-paragraph: #353430;
+    --main-title: #ffc2e6;
+    --shadow-title: #ff8dcb;
+    --buttons-corner: #353430;
+    --link-shadow: #ff8dcb;
+    --bg-image-head: url(../images/cover-image-light.png);
   }
-  .rec{
+  .rec {
     visibility: hidden;
   }
 }

@@ -153,7 +153,7 @@
 .text-shadow:hover {
   border-bottom: 1px solid var(--text-paragraph);
 }
-.text-shadow:focus{
+.text-shadow:focus {
   outline: none;
 }
 
@@ -163,7 +163,6 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--buttons-corner);
-  
 }
 
 .header__theme-menu-button:focus {
@@ -174,7 +173,7 @@
   outline: none;
   border-bottom: 1px solid var(--buttons-corner);
 }
-.header__theme-menu-button_active{
+.header__theme-menu-button_active {
   pointer-events: none;
 }
 /* разметка */
@@ -269,7 +268,7 @@
   background-color: var(--bg-color, #000028);
   /* border: 0.5px solid red; */
 }
-.title-pic{
+.title-pic {
   width: 100%;
 }
 

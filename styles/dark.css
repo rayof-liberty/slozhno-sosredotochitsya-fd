@@ -10,13 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: IBM Plex Mono;
-  --text-paragraph: #F1B2CE;
+  --text-paragraph: #f1b2ce;
   --title-paragraph: #000028;
-  --title-background-paragraph: #FF0070;
-  --main-title-paragraph: #FF0070;
-  --main-title: #DB00FF;
-  --shadow-title: #FF0070;
-  --buttons-corner: #FF0070;
+  --title-background-paragraph: #ff0070;
+  --main-title-paragraph: #ff0070;
+  --main-title: #db00ff;
+  --shadow-title: #ff0070;
+  --buttons-corner: #ff0070;
   --bg-image-head: url(../images/cover-image-dark.png);
 }
 
