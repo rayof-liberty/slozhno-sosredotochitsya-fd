@@ -1,12 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-/* .theme-dark .page { */
-/* Вам также нужно будет написать ряд подобных селекторов */
-/* background-image: var(--bg-image-head);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--bg-color);
-} */
+
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
