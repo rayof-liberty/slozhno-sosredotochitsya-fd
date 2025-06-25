@@ -28,7 +28,7 @@
   background-color: var(--first-title-color);
   /* border: 0.5px solid red; */
 }
-.header__theme-menu-item {
+/* .header__theme-menu-item {
   color: var(--bg-color);
 }
 .decorated-zone::before {
@@ -36,7 +36,8 @@
 }
 .decorated-zone::after {
   color: var(--bg-color);
-}
+} */
+ 
 .theme-light .page {
   .rec {
     visibility: hidden;

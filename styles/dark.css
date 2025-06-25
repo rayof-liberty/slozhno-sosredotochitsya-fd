@@ -19,12 +19,3 @@
   --buttons-corner: #ff0070;
   --bg-image-head: url(../images/cover-image-dark.png);
 }
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: var(--bg-image-head);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--bg-color);
-}
