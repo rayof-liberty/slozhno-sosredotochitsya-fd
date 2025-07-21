@@ -18,8 +18,10 @@
   --shadow-title: #ff0070;
   --buttons-corner: #ff0070;
   --bg-image-head: url(../images/cover-image-dark.png);
+  --hover-button: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {
+  
 /* Вам также нужно будет написать ряд подобных селекторов */
 }
